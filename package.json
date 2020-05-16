@@ -1,18 +1,14 @@
 {
   "name": "starterpack-alxfngg",
-  "homepage": "http://alxfngg.github.io/alexfeng.me",
   "version": "1.0.0",
   "main": "src/index.js",
-  "repository": "https://github.com/dartmouth-cs52-20S/starterpack-alxfngg.git",
   "author": "Alex Feng <alex.feng.23@dartmouth.edu>",
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
     "test": "eslint src/**.js",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
-    "clean": "rimraf dist",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build"
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
