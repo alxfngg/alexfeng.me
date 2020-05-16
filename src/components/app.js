@@ -12,7 +12,7 @@ const About = (props) => {
 const Welcome = (props) => {
   return (
     <div>
-      Welcome
+      Welcome!!!
       <Counter />
       <Controls />
     </div>
