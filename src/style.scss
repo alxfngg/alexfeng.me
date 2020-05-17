@@ -1,17 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap');
+
+$c1: #E27C6C;    // red
+$c2: #F1FAEE;    // lightest blue
+$c3: #A8DADC;    // lighter blue
+$c4: #457B9D;    // medium blue
+$c5: #1D3557;    // dark blue
+
 body, html {
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+    background: white;
     height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 0 23px 0;
 }
 
-.logo {
-    background-image: url('img/alex.jpg');
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+nav {
+    padding-left: 100px;
+    padding-right: 100px;
+    top: 0;
+    margin-top: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    .active {
+        color: $c1;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        li {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .16em;
+            font-weight: 600;
+            font-size: 14px;
+            color: $c5;
+            .navright {
+                margin-left: 25px;
+            }
+        }
+        a:hover {
+            color: $c1;
+        }
+        a {
+            color: $c2;
+        }
+    }
+}
 
-.active {
-    color: pink;
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Vollkorn', serif;
+    margin: 0;
+    font-size: 7.5vw;
+    font-weight: 600;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: -10;
+    width: 100vw;
+    height: 115vh;
+    margin: 0;
+    h1 {
+        margin-left: 100px;
+        color: white;
+    }
+    button {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+}
+
+#landing-main {
+    background-image: url('img/mountains.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+#about-main {
+    background-image: url('img/blossoms.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(49, 87, 110, 0.65);
+}
+
+button {
+    background: none;
+    height: 60px;
+    width: 200px;
+    border: 2px solid $c1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color: $c2;
+}
+
+button:hover {
+    background: $c1;
+    color: $c5;
+}
+
+.split-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+    background: white;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    h3 {
+        color: $c5;
+    }
+    div {
+        margin-right: 5vw;
+        margin-left: 2.5vw;
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    img {
+        width: 25vw;
+        max-height: 60vw;
+        margin-right: 2.5vw;
+        margin-left: 5vw;
+    }
+}
+
+h3 {
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin: 0 0 0 0;
+}
+
+h2 {
+    font-family: 'Vollkorn', serif;
+    font-weight: 600;
+    line-height: 75px;
+    font-size: 60px;
+    margin: 0 0 43px 0;
+}
+
+.sections-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 115vh;
+    margin: 0;
+    background: $c5;
+    color: white;
+    h2 {
+        width: 70vw;
+        text-align: center;
+        margin-bottom: 55px;
+        color: $c2;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 65px;
+            margin-right: 65px;
+            ul {
+                margin-left: 35px;
+                margin-top: 0;
+                padding: 0;
+                color: white;
+            }
+        }
+    }
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    font-weight: 600;
+    font-size: 17px;
+    color: $c1;
+}
+
+.images-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 160vh;
+    h2 {
+        color: $c5;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 20px;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        img {
+            width: 300px;
+            height: auto;
+            margin: 25px;
+            margin-top: 70px;
+        }
+        #middleimg {
+            margin-top: 125px;
+            margin-bottom: 90px;
+        }
+    }
+}
+
+.photo-layout-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150vh;
+    
+}
+
+.inverse-button {
+    color: $c5;
+    width: 300px;
+}
+
+.inverse-button:hover {
+    background: $c5;
+    color: $c1;
+    border: 2px solid $c5;
 }
