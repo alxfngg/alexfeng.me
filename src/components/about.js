@@ -59,7 +59,7 @@ const page2 = (props) => {
           </div>
         </div>
       </div>
-      <NavLink to="/contact"><button type="button" className="inverse-button">Dig my vibes? Contact me!</button></NavLink>
+      <NavLink to="/"><button type="button" className="inverse-button">Go back to home</button></NavLink>
     </div>
   );
 };
