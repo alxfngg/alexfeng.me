@@ -8,6 +8,7 @@ import { landingimagetext, aboutsub } from './text';
 
 const page1 = (props) => {
   return (
+
     <div className="split-page">
       <img src={baker} alt="baker tower" />
       <div>
@@ -76,7 +77,7 @@ const Landing = (props) => {
     <div id="pages">
       <div className="main-page" id="landing-main">
         <h1>{'Hi, I\'m Alex.'}</h1>
-        <NavLink to="/contact" className="navright"><button type="button">Connect with me</button></NavLink>
+        <NavLink to="/about"><button type="button">Find out more</button></NavLink>
       </div>
       {page1()}
       {page2()}

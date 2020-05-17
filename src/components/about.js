@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import alex from '../img/alex.jpg';
 import brooklyn from '../img/gallery/brooklyn.jpg';
 import hands from '../img/gallery/hands.jpg';
@@ -58,6 +59,7 @@ const page2 = (props) => {
           </div>
         </div>
       </div>
+      <NavLink to="/contact"><button type="button" className="inverse-button">Dig my vibes? Contact me!</button></NavLink>
     </div>
   );
 };

@@ -4,7 +4,6 @@ import {
 } from 'react-router-dom';
 import ProgressBar from 'react-scroll-progress-bar';
 import Landing from './landing';
-import Contact from './contact';
 import About from './about';
 
 const Nav = (props) => {
@@ -14,7 +13,6 @@ const Nav = (props) => {
         <li><NavLink to="/" exact>Home</NavLink></li>
         <li>
           <NavLink to="/about" className="navright">About</NavLink>
-          <NavLink to="/contact" className="navright">Contact</NavLink>
         </li>
       </ul>
     </nav>
@@ -35,7 +33,6 @@ const App = (props) => {
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
             <Route component={FallBack} />
           </Switch>
         </div>
