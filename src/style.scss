@@ -68,7 +68,6 @@ a {
 
 h1 {
     font-family: 'Vollkorn', serif;
-    margin: 0;
     font-size: 7.5vw;
     font-weight: 600;
 }
@@ -83,12 +82,11 @@ h1 {
     height: 115vh;
     margin: 0;
     h1 {
-        margin-left: 100px;
         color: white;
+        margin-left: 100px;
     }
     button {
         margin-left: 100px;
-        margin-top: 100px;
     }
 }
 
@@ -96,6 +94,7 @@ h1 {
     background-image: url('img/mountains.jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 }
 
@@ -104,13 +103,20 @@ h1 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    box-shadow: inset 0 0 0 1000px rgba(49, 87, 110, 0.65);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.60);
+    h4 {
+        margin-left: 100px;
+    }
+}
+
+#about-split-page {
+    background: $c2;
 }
 
 button {
     background: none;
     height: 60px;
-    width: 200px;
+    width: 250px;
     border: 2px solid $c1;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -131,10 +137,12 @@ button:hover {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 95vh;
+    height: min-content;
+    padding: 120px 0 120px 0;
     background: white;
     margin: 0;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     h3 {
         color: $c5;
@@ -178,7 +186,8 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 115vh;
+    height: min-content;
+    padding: 185px 0 185px 0;
     margin: 0;
     background: $c5;
     color: white;
@@ -223,10 +232,11 @@ h4 {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 160vh;
+    height: min-content;
+    padding: 150px 0 150px 0;
     h2 {
         color: $c5;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     p {
         font-size: 20px;
@@ -258,8 +268,39 @@ h4 {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 150vh;
-    
+    height: min-content;
+    background: white;
+    padding: 110px 0 110px 0;
+    h2 {
+        color: $c5;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 20px;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        text-align: center;
+    }
+    .wrapper {
+        width: 90%;
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            .column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 300px;
+                    height: auto;
+                    margin: 10px;
+                }
+             }
+        }
+    }
 }
 
 .inverse-button {
